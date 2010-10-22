@@ -6,6 +6,8 @@ namespace SHHH.Net.Mail.Abstractions
     {
 
         private SmtpClient Client{ get; set;}
+        public SmtpClientWrapper() : this(new SmtpClient()) { }
+
         public SmtpClientWrapper(SmtpClient client)
         {
             Client = client;
